@@ -21,10 +21,10 @@ CFLAGS   := -Wall
 LDFLAGS  := -Llib
 LDLIBS   := -lm
 
-SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so $(SDL_LIB)/libSDL2_image.a -L $(SDL_LIB)/libSDL2_gfx.so $(SDL_LIB)/libSDL2_gfx.a -L $(SDL_LIB)/libSDL2_ttf-2.0.so $(SDL_LIB)/libSDL2_ttf.a  -lfreetype -lpng -ljpeg -ltiff -lwebp
+#SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so $(SDL_LIB)/libSDL2_image.a -L $(SDL_LIB)/libSDL2_gfx.so $(SDL_LIB)/libSDL2_gfx.a -L $(SDL_LIB)/libSDL2_ttf-2.0.so $(SDL_LIB)/libSDL2_ttf.a  -lfreetype -lpng -ljpeg -ltiff -lwebp
 
 #mixer install 후 실행 가능 버전 
-#SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so $(SDL_LIB)/libSDL2_image.a -L $(SDL_LIB)/libSDL2_gfx.so $(SDL_LIB)/libSDL2_gfx.a -L $(SDL_LIB)/libSDL2_ttf-2.0.so $(SDL_LIB)/libSDL2_ttf.a -lSDL2_mixer -lfreetype -lpng -ljpeg -ltiff -lwebp
+SDL_LIBS := -L$(SDL_LIB)/libSDL2_2.0.so -lSDL2 -L$(SDL_LIB)/libSDL2_image-2.0.so $(SDL_LIB)/libSDL2_image.a -L $(SDL_LIB)/libSDL2_gfx.so $(SDL_LIB)/libSDL2_gfx.a -L $(SDL_LIB)/libSDL2_ttf-2.0.so $(SDL_LIB)/libSDL2_ttf.a -lSDL2_mixer -lfreetype -lpng -ljpeg -ltiff -lwebp
 
 
 # -L $(SDL_LIB)/libFLAC.so   -L $(SDL_LIB)/libogg.so.2.6.0  $(SDL_LIB)/libogg.a -L $(SDL_LIB)/libfluidsynth.so -L $(SDL_LIB)/libSDL2_mixer-2.0.so  $(SDL_LIB)/libSDL2_mixer.a  $(SDL_LIB)/libFLAC.a
