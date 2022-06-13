@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -142,13 +142,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\BaseGameEntity.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\InputHandler.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\SteeringBehavior.cpp" />
+    <ClCompile Include="src\Vehicle.cpp" />
     <ClCompile Include="src\Walker.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\BaseGameEntity.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\InputHandler.h" />
     <ClInclude Include="include\main.h" />
+    <ClInclude Include="include\SteeringBehavior.h" />
+    <ClInclude Include="include\Vector2D.h" />
+    <ClInclude Include="include\Vehicle.h" />
+    <ClInclude Include="include\Walker.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
